@@ -76,11 +76,11 @@ public class Solution {
         chessdesk[point.getX()][point.getY()] = 2;
         stack.push(point);
         while (!stack.empty()) {
-            Point point1 = stack.pop();
+            Point stackPoint = stack.pop();
             if (stack.isEmpty()) {
-                System.out.println("[" + point1.getX() + "," + point1.getY() + "]");
+                System.out.println("[" + stackPoint.getX() + "," + stackPoint.getY() + "]");
             } else {
-                System.out.print("[" + point1.getX() + "," + point1.getY() + "]->");
+                System.out.print("[" + stackPoint.getX() + "," + stackPoint.getY() + "]->");
             }
         }
     }
