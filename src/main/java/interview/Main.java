@@ -4,6 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         //check input
+        if (args.length < 6) {
+            System.out.println("Number of parameters should be exactly 6");
+            System.exit(1);
+        }
+
         int chessdeskSize = 0;
         int steps = 0;
         int startX = 0;
